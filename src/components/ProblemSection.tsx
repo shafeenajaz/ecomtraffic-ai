@@ -5,12 +5,12 @@ const problems = [
   {
     icon: MessageSquareOff,
     title: "Invisible in AI Conversations",
-    description: "Gemini, AI Mode, and ChatGPT recommend products from connected retailers. Without proper integrations and structured data, your brand is invisible or misrepresented when users ask AI what to buy.",
+    description: "Gemini, AI Mode, and ChatGPT recommend products from connected retailers. Without proper integrations and structured data, your brand is invisible so users never get suggestions to buy your products.",
   },
   {
     icon: Database,
-    title: "Data Isn't LLM-Friendly",
-    description: "Your store is optimized for keyword search, not semantic understanding. LLMs need rich metadata, FAQs, and brand narratives to recommend your products confidently.",
+    title: "Data Isn't AI-Friendly",
+    description: "Your store is optimized for keyword search, not semantic understanding. AI need rich multi-layered data to recommend your products confidently. Without this data, they won't know if what you're selling is relevant to the user or not.",
   },
   {
     icon: Users,
@@ -47,13 +47,11 @@ const ProblemSection = () => {
             The AI Commerce Gap
           </h2>
           <p className="text-lg text-primary-foreground/70 max-w-2xl mx-auto">
-            Shoppers are beginning journeys in AI tools like Gemini, ChatGPT, and Copilot—and 
-            increasingly expect to discover and buy products directly within AI conversations. 
-            Most brands aren't ready.
+            Shoppers are beginning journeys in AI tools like Gemini, ChatGPT, and Copilot. They expect to discover and buy products directly within AI conversations.. But over 90% of products are still invisible to AI.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 gap-6 max-w-3xl mx-auto">
           {problems.map((problem, index) => (
             <motion.div
               key={problem.title}

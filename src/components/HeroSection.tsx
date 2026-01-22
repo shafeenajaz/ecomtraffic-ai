@@ -39,7 +39,8 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
           >
-            Your <span className="text-red-700">Competitors</span> Are Seeing A Surge In Traffic From{" "}
+            <span className="text-red-700">Early Adopters</span> Are Seeing A <br />
+            Surge In Traffic From{" "}
             <span className="relative inline-block">
               <AnimatePresence mode="wait">
                 <motion.span
@@ -62,7 +63,7 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed first-letter:capitalize"
           >
-            49% Of Shoppers Reported Using AI When Researching What To Buy. With Most Products Still Not Discoverable By AI, This Targeted Traffic Is Going To A Select Few Stores.
+            49% Of Shoppers Reported Using AI When Researching What To Buy. With Most Products Still Not Discoverable By AI, This High Converting Traffic Is Going To A Select Few Stores.
           </motion.p>
 
           <motion.div
