@@ -84,8 +84,8 @@ const ProblemSection = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-12 text-center"
         >
-          <p className="text-cyan text-lg font-medium">
-            Brands appearing in AI recommendations see <span className="text-2xl font-bold">39% higher click-through rates</span> for brand discovery.
+          <p className="text-cyan text-xl font-bold">
+            Brands appearing in AI recommendations see 39% higher click-through rates for brand discovery.
           </p>
         </motion.div>
       </div>
