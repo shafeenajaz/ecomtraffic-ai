@@ -30,7 +30,7 @@ const HeroSection = () => {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan/10 border border-cyan/20 mb-8"
           >
             <Sparkles className="w-4 h-4 text-cyan" />
-            <span className="text-sm font-medium text-navy">AI Commerce Enablement Studio</span>
+            <span className="text-sm font-medium text-navy">AI Ecommerce Enablement Studio</span>
           </motion.div>
 
           <motion.h1
@@ -39,7 +39,7 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
           >
-            <span className="text-red-700">Early Adopters</span> Are Seeing A <br />
+            <span className="text-red-700">Ecommerce Stores</span> Are Seeing A <br />
             Surge In Traffic From{" "}
             <span className="relative inline-block">
               <AnimatePresence mode="wait">
@@ -63,7 +63,7 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed first-letter:capitalize"
           >
-            49% Of Shoppers Reported Using AI When Researching What To Buy. With Most Products Still Not Discoverable By AI, This High Converting Traffic Is Going To A Select Few Stores.
+            Get Your Products Suggested By Major AI Language Models To Get Access To 800M+ Weekly Users
           </motion.p>
 
           <motion.div
@@ -72,13 +72,12 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <Button variant="hero" size="xl">
-              Become AI-Discoverable
-              <ArrowRight className="w-5 h-5" />
-            </Button>
-            <Button variant="heroOutline" size="xl">
-              See How It Works
-            </Button>
+            <a href="https://calendar.app.google/PMxorYMHDCTMovfa8" target="_blank" rel="noopener noreferrer">
+              <Button variant="hero" size="xl">
+                Schedule AI-Visibility Audit
+                <ArrowRight className="w-5 h-5" />
+              </Button>
+            </a>
           </motion.div>
 
           {/* Trust indicators */}

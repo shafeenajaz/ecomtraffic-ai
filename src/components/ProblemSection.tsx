@@ -34,58 +34,23 @@ const ProblemSection = () => {
           backgroundSize: '40px 40px'
         }} />
       </div>
-      
+
       <div className="container mx-auto px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center max-w-3xl mx-auto"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
-            The AI Commerce Gap
+          <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-4">
+            The Problem You're Facing
           </h2>
-          <p className="text-lg text-primary-foreground/70 max-w-2xl mx-auto">
-            Shoppers are beginning journeys in AI tools like Gemini, ChatGPT, and Copilot. They expect to discover and buy products directly within AI conversations.. But over 90% of products are still invisible to AI.
+          <p className="text-xl text-primary-foreground mb-2">
+            <span className="text-cyan font-semibold">Your Products Are Completely Invisible To AI</span>
           </p>
-        </motion.div>
-
-        <div className="grid grid-cols-2 gap-6 max-w-3xl mx-auto">
-          {problems.map((problem, index) => (
-            <motion.div
-              key={problem.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="relative group"
-            >
-              <div className="h-full p-6 rounded-2xl bg-navy-light/50 border border-primary-foreground/10 hover:border-cyan/30 transition-all duration-300">
-                <div className="w-12 h-12 rounded-xl bg-cyan/10 flex items-center justify-center mb-5 group-hover:bg-cyan/20 transition-colors">
-                  <problem.icon className="w-6 h-6 text-cyan" />
-                </div>
-                <h3 className="text-lg font-semibold text-primary-foreground mb-3">
-                  {problem.title}
-                </h3>
-                <p className="text-primary-foreground/60 leading-relaxed text-sm">
-                  {problem.description}
-                </p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-
-        {/* Stat callout */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-12 text-center"
-        >
-          <p className="text-cyan text-xl font-bold">
-            Brands appearing in AI recommendations see 39% higher click-through rates for brand discovery.
+          <p className="text-lg text-primary-foreground/70">
+            These large language models don't know that you exist. They can't parse your information.
           </p>
         </motion.div>
       </div>

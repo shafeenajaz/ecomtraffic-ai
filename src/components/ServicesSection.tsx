@@ -1,39 +1,21 @@
 import { motion } from "framer-motion";
-import { Search, Zap, BarChart3, ShoppingBag, FileCode, RefreshCcw } from "lucide-react";
+import { ShoppingCart, Store, TrendingUp } from "lucide-react";
 
-const visibilityPackage = [
+const pillars = [
   {
-    icon: Search,
-    title: "AI Discoverability Audit",
-    description: "Comprehensive review of your catalog, content, schema markup, and competitor positioning in LLM responses. Includes a prioritized 90-day roadmap.",
+    icon: ShoppingCart,
+    title: "AI Discoverability & Data Readiness",
+    description: "Structure product data, content, and policies so LLMs can read to them support you in AI searchers.",
   },
   {
-    icon: FileCode,
-    title: "Content & Data Optimization",
-    description: "Transform product titles, descriptions, attributes, and FAQs for semantic richness and LLM understanding. We make your data AI-friendly.",
+    icon: Store,
+    title: "AI Commerce Integrations",
+    description: "Implementation of native and third-party integrations that enable products to be purchased in AI environments to increase your sales without them ever visiting your site.",
   },
   {
-    icon: ShoppingBag,
-    title: "Shopify UCP Configuration",
-    description: "Configure Agentic Storefronts and Universal Commerce Protocol to surface products in Gemini, AI Mode, and Copilot with direct checkout.",
-  },
-  {
-    icon: Zap,
-    title: "LLMs.txt & Feed Setup",
-    description: "Implement LLMs.txt files, Feedonomics integrations, and structured product feeds for BigCommerce and headless platforms.",
-  },
-];
-
-const ongoingOptimizations = [
-  {
-    icon: BarChart3,
-    title: "AI Visibility Tracking",
-    description: "Monthly audits across ChatGPT, Gemini, Perplexity, and Copilot. Track brand mentions, position, sentiment, and attribute to AI-driven revenue.",
-  },
-  {
-    icon: RefreshCcw,
-    title: "Continuous Optimization",
-    description: "A/B testing data formats, updating feeds for new products and promotions, adapting to algorithm changes. Monthly dashboard reporting included.",
+    icon: TrendingUp,
+    title: "Generative Engine Optimization",
+    description: "Monthly optimization cycles to ensure increased suggestions, traffic and sales from AI.",
   },
 ];
 
@@ -48,106 +30,38 @@ const ServicesSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-cyan font-semibold text-sm uppercase tracking-wider">Our Services</span>
-          <h2 className="text-3xl md:text-4xl font-bold mt-3 mb-4">
-            Full-Stack AI Commerce Enablement
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            What You Get With The <span className="text-cyan">AI Ecommerce Enablement Studio</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Two comprehensive packages designed to make your products visible, shoppable, and measurable across every major AI platform.
-          </p>
         </motion.div>
 
-        {/* AI Visibility Package */}
-        <div className="mb-16">
-          <motion.h3
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-2xl font-bold mb-8 text-center"
-          >
-            AI Visibility Package
-          </motion.h3>
-          <div className="grid md:grid-cols-2 gap-6">
-            {visibilityPackage.map((service, index) => (
-              <motion.div
-                key={service.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.08 }}
-                className="group"
-              >
-                <div className="h-full p-8 rounded-2xl bg-card border border-border hover:border-cyan/30 hover:shadow-lg transition-all duration-300">
-                  <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center mb-5 group-hover:bg-cyan/10 transition-colors">
-                    <service.icon className="w-6 h-6 text-cyan" />
-                  </div>
-                  <h4 className="text-lg font-semibold mb-2 text-navy">
-                    {service.title}
-                  </h4>
-                  <p className="text-muted-foreground leading-relaxed text-sm">
-                    {service.description}
-                  </p>
+        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          {pillars.map((pillar, index) => (
+            <motion.div
+              key={pillar.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="group"
+            >
+              <div className="h-full p-8 rounded-2xl bg-card border border-border hover:border-cyan/30 hover:shadow-lg transition-all duration-300">
+                <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center mb-6 group-hover:bg-cyan/10 transition-colors">
+                  <pillar.icon className="w-6 h-6 text-cyan" />
                 </div>
-              </motion.div>
-            ))}
-          </div>
+                <span className="text-cyan font-semibold text-xs uppercase tracking-wider">
+                  PILLAR #{index + 1}
+                </span>
+                <h3 className="text-xl font-semibold mt-3 mb-4 text-navy">
+                  {pillar.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  {pillar.description}
+                </p>
+              </div>
+            </motion.div>
+          ))}
         </div>
-
-        {/* Ongoing GEO Optimizations */}
-        <div className="mb-16">
-          <motion.h3
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-2xl font-bold mb-8 text-center"
-          >
-            Ongoing GEO Optimizations
-          </motion.h3>
-          <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-            {ongoingOptimizations.map((service, index) => (
-              <motion.div
-                key={service.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.08 }}
-                className="group"
-              >
-                <div className="h-full p-8 rounded-2xl bg-card border border-border hover:border-cyan/30 hover:shadow-lg transition-all duration-300">
-                  <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center mb-5 group-hover:bg-cyan/10 transition-colors">
-                    <service.icon className="w-6 h-6 text-cyan" />
-                  </div>
-                  <h4 className="text-lg font-semibold mb-2 text-navy">
-                    {service.title}
-                  </h4>
-                  <p className="text-muted-foreground leading-relaxed text-sm">
-                    {service.description}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-
-        {/* Platform support */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="mt-12 text-center"
-        >
-          <p className="text-sm text-muted-foreground mb-4">Platform expertise</p>
-          <div className="flex flex-wrap justify-center items-center gap-6 text-navy/60 font-medium">
-            <span>Shopify</span>
-            <span className="w-1 h-1 rounded-full bg-border" />
-            <span>BigCommerce</span>
-            <span className="w-1 h-1 rounded-full bg-border" />
-            <span>Headless / Custom</span>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

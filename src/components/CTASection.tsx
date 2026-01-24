@@ -18,21 +18,20 @@ const CTASection = () => {
           transition={{ duration: 0.6 }}
           className="max-w-3xl mx-auto text-center"
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            Ready to Become{" "}
-            <span className="gradient-text">AI-Visible?</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            Ready to Become <span className="text-cyan">AI-Visible</span>?
           </h2>
-          <p className="text-lg md:text-xl text-muted-foreground mb-10 leading-relaxed">
-            Don't let competitors capture the AI-driven commerce opportunity. 
-            Whether you're on Shopify, BigCommerce, or a headless platform, 
-            we'll make your products discoverable and shoppable across every major AI platform.
+          <p className="text-lg text-muted-foreground mb-10 leading-relaxed">
+            Don't let competitors capture this huge chunk of traffic. Whether you're on Shopify, BigCommerce, or a headless platform, we'll make your products discoverable and get you high converting traffic.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="xl">
-              Schedule Your Free Audit
-              <ArrowRight className="w-5 h-5" />
-            </Button>
+            <a href="https://calendar.app.google/PMxorYMHDCTMovfa8" target="_blank" rel="noopener noreferrer">
+              <Button variant="hero" size="xl">
+                Schedule Your Free Audit
+                <ArrowRight className="w-5 h-5" />
+              </Button>
+            </a>
           </div>
           
           <p className="mt-6 text-sm text-muted-foreground">
