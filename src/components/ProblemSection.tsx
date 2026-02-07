@@ -26,8 +26,12 @@ const problems = [
 
 const ProblemSection = () => {
   return (
-    <section id="about" className="py-24 bg-navy relative overflow-hidden">
-      {/* Background pattern */}
+    <section id="about" className="py-24 bg-navy relative overflow-hidden" style={{
+      backgroundImage: 'url(/problem-bg.png)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center'
+    }}>
+      {/* Background pattern overlay */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
           backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)',
