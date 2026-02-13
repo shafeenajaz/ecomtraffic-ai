@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 
 const aiPlatforms = ["ChatGPT", "Perplexity", "Gemini", "Copilot"];
+const allPlatforms = [...aiPlatforms, "AI Mode"];
 
 const HeroSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -89,11 +90,11 @@ const HeroSection = () => {
           >
             <p className="text-sm text-muted-foreground mb-6">Making Your Products Visible Across Major AI Platforms</p>
             <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-60">
-              <span className="text-xl font-semibold text-navy">Gemini</span>
-              <span className="text-xl font-semibold text-navy">ChatGPT</span>
-              <span className="text-xl font-semibold text-navy">Copilot</span>
-              <span className="text-xl font-semibold text-navy">Perplexity</span>
-              <span className="text-xl font-semibold text-navy">AI Mode</span>
+              {allPlatforms.map((platform) => (
+                <span key={platform} className="text-xl font-semibold text-navy">
+                  {platform}
+                </span>
+              ))}
             </div>
           </motion.div>
         </div>
