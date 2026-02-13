@@ -72,7 +72,7 @@ const ProblemVsSolutionSection = () => {
             <p className="text-foreground mb-6">
               Investing in AI Visibility should be top of mind for every ecommerce business.
             </p>
-            <a href="https://calendar.app.google/PMxorYMHDCTMovfa8" target="_blank" rel="noopener noreferrer" className="w-full block">
+            <a href="https://ecomtrafficai.odoo.com/appointment/1" className="w-full block">
               <Button className="w-full bg-cyan hover:bg-cyan/90 text-white rounded-full font-semibold">
                 Schedule AI Visibility Audit →
               </Button>

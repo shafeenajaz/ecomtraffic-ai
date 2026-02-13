@@ -15,7 +15,7 @@ const Header = () => {
           <img src={logo} alt="EcomTraffic.ai" className="h-6 md:h-8" />
         </a>
 
-        <a href="https://calendar.app.google/PMxorYMHDCTMovfa8" target="_blank" rel="noopener noreferrer">
+        <a href="https://ecomtrafficai.odoo.com/appointment/1">
           <Button variant="hero" size="default">
             Get Started
           </Button>
