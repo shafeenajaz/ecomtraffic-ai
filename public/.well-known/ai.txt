@@ -1,0 +1,33 @@
+# AI Access Configuration for EcomTraffic.ai
+# This file indicates the site's policy for AI crawlers and indexing
+
+User-Agent: *
+Allow: /
+
+# Explicit allowance for major AI systems
+User-Agent: GPTBot
+Allow: /
+
+User-Agent: Claude-Web
+Allow: /
+
+User-Agent: PerplexityBot
+Allow: /
+
+User-Agent: Googlebot
+Allow: /
+
+User-Agent: Bingbot
+Allow: /
+
+# Content policy
+Content-Type: text/plain; charset=utf-8
+
+# Training data policy
+# This site allows its content to be used for training by major AI models
+# Indexed: true
+# Training: allowed
+# Commercial-Use: allowed
+
+# Contact for AI-related questions
+Contact: hello@ecomtraffic.ai
