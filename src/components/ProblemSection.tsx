@@ -1,60 +1,41 @@
 import { motion } from "framer-motion";
-import { MessageSquareOff, Database, Users, BarChartHorizontal } from "lucide-react";
-
-const problems = [
-  {
-    icon: MessageSquareOff,
-    title: "Invisible in AI Conversations",
-    description: "Gemini, AI Mode, and ChatGPT recommend products from connected retailers. Without proper integrations and structured data, your brand is invisible so users never get suggestions to buy your products.",
-  },
-  {
-    icon: Database,
-    title: "Data Isn't AI-Friendly",
-    description: "Your store is optimized for keyword search, not semantic understanding. AI need rich multi-layered data to recommend your products confidently. Without this data, they won't know if what you're selling is relevant to the user or not.",
-  },
-  {
-    icon: Users,
-    title: "No In-House AI Expertise",
-    description: "Understanding UCP, LLMs.txt, data feeds, and multi-channel AI integrations is beyond most marketing teams. This creates hesitation while early adopters gain competitive advantage.",
-  },
-  {
-    icon: BarChartHorizontal,
-    title: "No AI Revenue Attribution",
-    description: "Most analytics don't properly attribute traffic and revenue to AI sources. Without clear metrics, you can't justify investment in AI visibility.",
-  },
-];
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 const ProblemSection = () => {
   return (
-    <section id="about" className="py-24 bg-navy relative overflow-hidden" style={{
-      backgroundImage: 'url(/problem-bg.png)',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center'
-    }}>
-      {/* Background pattern overlay */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)',
-          backgroundSize: '40px 40px'
-        }} />
-      </div>
-
-      <div className="container mx-auto px-6 relative z-10">
+    <section className="py-20 bg-rose-50 relative overflow-hidden">
+      <div className="container mx-auto px-6 relative z-10 max-w-4xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center max-w-3xl mx-auto"
+          className="text-center"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-4">
-            The Problem You're Facing
+          <div className="inline-block px-4 py-2 rounded-full bg-red-100 border border-red-200 mb-6">
+            <span className="text-xs font-semibold text-red-600 uppercase tracking-wider">
+              The Core Problem
+            </span>
+          </div>
+
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+            If AI Can't Read Your Shopify Store,{" "}
+            <span className="text-red-600">You're Losing Revenue Every Day</span>
           </h2>
-          <p className="text-xl text-primary-foreground mb-2">
-            <span className="text-cyan font-semibold">Your Products Are Completely Invisible To AI</span>
+
+          <p className="text-lg text-foreground/70 mb-8 max-w-3xl mx-auto leading-relaxed">
+            LLMs can't parse unstructured product data. They don't see your categories. They don't understand your competitive positioning — or that you're a better alternative than your competitors. They give your market share to brands they can read.
           </p>
-          <p className="text-lg text-primary-foreground/70">
-            These large language models don't know that you exist. They can't parse your information.
+
+          <a href="https://ecomtrafficai.odoo.com/appointment/1">
+            <Button className="bg-navy hover:bg-navy/90 text-white rounded-full px-6 py-3 flex items-center gap-2 font-semibold mx-auto">
+              Audit My Store's AI Visibility — Free <ArrowRight className="w-4 h-4" />
+            </Button>
+          </a>
+
+          <p className="text-sm text-foreground/60 mt-6">
+            No commitment. See exactly where you're invisible in 24 hours.
           </p>
         </motion.div>
       </div>

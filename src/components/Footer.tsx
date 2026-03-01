@@ -10,14 +10,11 @@ const Footer = () => {
           </div>
           
           <nav className="flex flex-wrap justify-center gap-8">
-            <a href="#services" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors text-sm">
-              Services
+            <a href="https://ecomtraffic.ai/privacy" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors text-sm">
+              Privacy
             </a>
-            <a href="#how-it-works" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors text-sm">
-              How It Works
-            </a>
-            <a href="#about" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors text-sm">
-              About
+            <a href="#agency-partners" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors text-sm">
+              Agency Partners
             </a>
             <a href="mailto:hello@ecomtraffic.ai" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors text-sm">
               Contact
